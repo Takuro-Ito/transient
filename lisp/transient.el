@@ -3262,7 +3262,7 @@ have a history of their own.")
       (setq mode-line-buffer-identification
             (symbol-name (oref transient--prefix command)))
       (if transient-enable-popup-navigation
-          (setq-local cursor-in-non-selected-windows 'box)
+          (setq-local cursor-in-non-selected-windows t)
         (setq cursor-type nil))
       (setq display-line-numbers nil)
       (setq show-trailing-whitespace nil)
